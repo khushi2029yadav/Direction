@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="maroonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B1D26" />
+      <stop offset="50%" stop-color="#74151D" />
+      <stop offset="100%" stop-color="#4E0D13" />
+    </linearGradient>
+    <radialGradient id="blushCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="70%" stop-color="#FCECE9" />
+      <stop offset="100%" stop-color="#F5D8D5" />
+    </radialGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C07B" />
+      <stop offset="100%" stop-color="#C59B4B" />
+    </linearGradient>
+
+    <!-- Curved Text Paths -->
+    <path id="textArcTop" d="M 60,200 A 140,140 0 1,1 340,200" fill="none" />
+    <path id="textArcBottom" d="M 320,200 A 120,120 0 0,1 80,200" fill="none" />
+  </defs>
+
+  <!-- Outer Deep Maroon Circular Border -->
+  <circle cx="200" cy="200" r="192" fill="url(#maroonGradient)" stroke="#3C1015" stroke-width="4" />
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#DDA6A6" stroke-width="2" stroke-dasharray="6,4" />
+
+  <!-- Inner Band for Lettering -->
+  <circle cx="200" cy="200" r="148" fill="url(#blushCenter)" stroke="#74151D" stroke-width="6" />
+
+  <!-- Top Curved Brand Text: DISHA CLASSES -->
+  <text fill="#FFFFFF" font-family="'Space Grotesk', 'Manrope', 'Montserrat', sans-serif" font-size="28" font-weight="800" letter-spacing="4.5">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      DISHA CLASSES
+    </textPath>
+  </text>
+
+  <!-- Star at Top Center -->
+  <g transform="translate(200, 32)">
+    <polygon points="0,-10 3,-3 10,-3 4,2 6,9 0,5 -6,9 -4,2 -10,-3 -3,-3" fill="#FFFDF7" stroke="#DDA6A6" stroke-width="1" />
+  </g>
+
+  <!-- Bottom Subtitle on Ring: MUMBAI • ESTD -->
+  <text fill="#F5D8D5" font-family="'Manrope', sans-serif" font-size="13" font-weight="700" letter-spacing="3.5">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+      WADALA • MATUNGA • MUMBAI
+    </textPath>
+  </text>
+
+  <!-- Central Crest Inner Elements -->
+  <!-- Inner Ring -->
+  <circle cx="200" cy="206" r="110" fill="url(#blushCenter)" stroke="#74151D" stroke-width="2" />
+  <circle cx="200" cy="206" r="105" fill="none" stroke="#DDA6A6" stroke-width="1.2" stroke-dasharray="3,3" />
+
+  <!-- Laurel Wreath of Academic Achievement (Left Branch) -->
+  <g fill="#74151D" opacity="0.85">
+    <path d="M 115,225 C 112,205 118,175 135,150 C 137,153 134,162 130,168 C 124,178 122,192 124,208 Z" />
+    <!-- Leaflets Left -->
+    <ellipse cx="120" cy="180" rx="9" ry="4.5" transform="rotate(-35 120 180)" />
+    <ellipse cx="128" cy="162" rx="8" ry="4" transform="rotate(-48 128 162)" />
+    <ellipse cx="138" cy="146" rx="7.5" ry="3.8" transform="rotate(-60 138 146)" />
+    <ellipse cx="152" cy="135" rx="7" ry="3.5" transform="rotate(-72 152 135)" />
+    <ellipse cx="123" cy="200" rx="9" ry="4.5" transform="rotate(-20 123 200)" />
+    <ellipse cx="130" cy="220" rx="9" ry="4.5" transform="rotate(-5 130 220)" />
+  </g>
+
+  <!-- Laurel Wreath (Right Branch) -->
+  <g fill="#74151D" opacity="0.85">
+    <path d="M 285,225 C 288,205 282,175 265,150 C 263,153 266,162 270,168 C 276,178 278,192 276,208 Z" />
+    <!-- Leaflets Right -->
+    <ellipse cx="280" cy="180" rx="9" ry="4.5" transform="rotate(35 280 180)" />
+    <ellipse cx="272" cy="162" rx="8" ry="4" transform="rotate(48 272 162)" />
+    <ellipse cx="262" cy="146" rx="7.5" ry="3.8" transform="rotate(60 262 146)" />
+    <ellipse cx="248" cy="135" rx="7" ry="3.5" transform="rotate(72 248 135)" />
+    <ellipse cx="277" cy="200" rx="9" ry="4.5" transform="rotate(20 277 200)" />
+    <ellipse cx="270" cy="220" rx="9" ry="4.5" transform="rotate(5 270 220)" />
+  </g>
+
+  <!-- Student Figure with Triumphantly Raised Hands -->
+  <g fill="#74151D" id="studentFigure">
+    <!-- Head -->
+    <circle cx="200" cy="152" r="14" />
+    <!-- Radiating Star / Aura above student head -->
+    <polygon points="200,126 202,132 208,132 203,136 205,142 200,138 195,142 197,136 192,132 198,132" fill="#74151D" />
+
+    <!-- Torso and Raised Hands -->
+    <path d="M 200,170 
+             C 192,170 178,174 165,160 
+             C 160,154 153,138 150,132 
+             C 148,128 154,125 158,129 
+             C 162,134 168,148 174,153 
+             C 181,159 188,162 195,173 
+             L 193,205 
+             L 207,205 
+             L 205,173 
+             C 212,162 219,159 226,153 
+             C 232,148 238,134 242,129 
+             C 246,125 252,128 250,132 
+             C 247,138 240,154 235,160 
+             C 222,174 208,170 200,170 Z" />
+  </g>
+
+  <!-- Open Book of Knowledge Underneath Student -->
+  <g fill="#74151D" stroke="#FFFDF7" stroke-width="1.5" id="openBook">
+    <!-- Spine Center -->
+    <path d="M 200,210 L 200,240" stroke="#74151D" stroke-width="3" />
+    
+    <!-- Left Page -->
+    <path d="M 200,212 C 180,206 155,206 142,212 L 142,238 C 158,232 182,232 200,238 Z" fill="#74151D" />
+    <path d="M 197,215 C 180,210 160,210 148,215" fill="none" stroke="#F5D8D5" stroke-width="1.2" />
+    <path d="M 197,222 C 180,217 160,217 148,222" fill="none" stroke="#F5D8D5" stroke-width="1.2" />
+    <path d="M 197,229 C 180,224 160,224 148,229" fill="none" stroke="#F5D8D5" stroke-width="1.2" />
+
+    <!-- Right Page -->
+    <path d="M 200,212 C 220,206 245,206 258,212 L 258,238 C 242,232 218,232 200,238 Z" fill="#74151D" />
+    <path d="M 203,215 C 220,210 240,210 252,215" fill="none" stroke="#F5D8D5" stroke-width="1.2" />
+    <path d="M 203,222 C 220,217 240,217 252,222" fill="none" stroke="#F5D8D5" stroke-width="1.2" />
+    <path d="M 203,229 C 220,224 240,224 252,229" fill="none" stroke="#F5D8D5" stroke-width="1.2" />
+  </g>
+
+  <!-- Hindi Script Banner or Academic Ribbon below -->
+  <g transform="translate(200, 260)">
+    <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#74151D" />
+    <text x="0" y="5" text-anchor="middle" fill="#FFFDF7" font-family="'Manrope', sans-serif" font-size="12" font-weight="800" letter-spacing="1.5">
+      दिशा क्लासेज
+    </text>
+  </g>
+</svg>
